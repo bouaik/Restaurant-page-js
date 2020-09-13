@@ -2,6 +2,7 @@ const navbar = (() => {
     const nav = document.createElement('nav')
     
     const logo = document.createElement('h2')
+    logo.className = 'logo'
     logo.textContent = 'Memoza restaurant'
 
     const list = document.createElement('ul')
