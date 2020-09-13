@@ -8,8 +8,7 @@ import contact from './js/contact'
 const content = document.getElementById('content')
 
 content.appendChild(navbar)
-// content.appendChild(home)
-content.appendChild(home)
+content.appendChild(contact)
 
 
 
@@ -22,6 +21,7 @@ links.forEach(link => link.addEventListener('click', (e) => {
         content.innerHTML = ''
         content.appendChild(navbar)
         content.appendChild(menu)
+        filterItems()
     } else if (tab === "Home") {
         content.innerHTML = ''
         content.appendChild(navbar)
@@ -33,25 +33,27 @@ links.forEach(link => link.addEventListener('click', (e) => {
     }
 }))
 
-const filterBtn = document.querySelectorAll(".filter-btn");
+const filterItems = () => {
+    const filterBtn = document.querySelectorAll(".filter-btn");
 
-filterBtn.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const value = e.target.dataset.filter;
+    filterBtn.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const value = e.target.dataset.filter;
 
-    const items = document.querySelectorAll(".menu-item ");
+        const items = document.querySelectorAll(".menu-item ");
 
-    items.forEach((item) => {
-        if (value === "all") {
-        item.style.display = "block";
-        } else {
-        if (item.classList.contains(value)) {
+        items.forEach((item) => {
+            if (value === "all") {
             item.style.display = "block";
-        } else {
-            item.style.display = "none";
-        }
-        }
+            } else {
+            if (item.classList.contains(value)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+            }
+        });
+        });
     });
-    });
-});
+}

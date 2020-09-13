@@ -1,0 +1,35 @@
+.contact-from {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.contact-title {
+    font-size: 40px;
+    color: tomato;
+}
+
+form {
+    width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 25px;
+    padding: 5px;
+
+}
+textarea {
+    height: 200px;
+}
+.submit-btn {
+    background-color: teal;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        opacity: .8;
+    }
+}
