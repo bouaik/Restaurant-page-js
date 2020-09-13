@@ -8,7 +8,7 @@ import contact from './js/contact';
 const content = document.getElementById('content');
 
 content.appendChild(navbar);
-content.appendChild(contact);
+content.appendChild(home);
 
 
 const filterItems = () => {
