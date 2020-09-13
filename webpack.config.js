@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -12,10 +11,6 @@ module.exports = {
     compress: true,
     port: 8050,
   },
-  plugins: [new HtmlWebpackPlugin({
-    filename: 'index.html',
-    template: './index.html',
-  })],
   module: {
     rules: [{
       test: /\.scss$/,
