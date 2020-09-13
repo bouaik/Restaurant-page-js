@@ -15,9 +15,9 @@
     padding: 20px 0;
 }
 
-// .container-categories {
-
-// }
+.container-categories {
+    padding: 10px 0;
+}
 
 .filter-btn {
     color: #fff;
@@ -25,4 +25,21 @@
     margin: 0 10px;
     padding: 5px 10px;
     background-color: rgba(255, 255, 0, 0.363);
+}
+.menu-items {
+    display: flex;
+    margin-top: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 200px;
+    border: 1px solid #000;
+    margin: 0 10px;
+}
+
+img {
+    width: 100%;
 }
