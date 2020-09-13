@@ -3,12 +3,13 @@ import './styles/main.scss'
 import navbar from './js/navbar'
 import home from './js/home'
 import menu from './js/menu'
+import contact from './js/contact'
 
 const content = document.getElementById('content')
 
 content.appendChild(navbar)
 // content.appendChild(home)
-content.appendChild(menu)
+content.appendChild(home)
 
 
 
@@ -18,13 +19,17 @@ links.forEach(link => link.addEventListener('click', (e) => {
     let tab = e.target.textContent
 
     if (tab === "Menu") {
-        content.removeChild(home)
+        content.innerHTML = ''
+        content.appendChild(navbar)
         content.appendChild(menu)
     } else if (tab === "Home") {
+        content.innerHTML = ''
+        content.appendChild(navbar)
         content.appendChild(home)
-        content.removeChild(menu)
     } else if (tab === "Contact") {
-
+        content.innerHTML = ''
+        content.appendChild(navbar)
+        content.appendChild(contact)
     }
 }))
 
