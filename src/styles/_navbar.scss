@@ -1,13 +1,13 @@
 .logo {
     font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
-    color: teal;
+    color: rgb(151, 23, 0);
     font-size: 40px;
     text-transform: capitalize;
 }
 
 nav {
-    background-color: #b9cbd5ab;
+    background-color: #397da2b3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,8 @@ nav {
 
 .nav-link {
     color: #000;
+    font-weight: bold;
     &:hover {
-        color: teal;
+        color: #fff;
     }
 }
