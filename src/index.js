@@ -7,7 +7,9 @@ import menu from './js/menu'
 const content = document.getElementById('content')
 
 content.appendChild(navbar)
-content.appendChild(home)
+// content.appendChild(home)
+content.appendChild(menu)
+
 
 
 const links = document.querySelectorAll('.nav-link');
@@ -22,6 +24,6 @@ links.forEach(link => link.addEventListener('click', (e) => {
         content.appendChild(home)
         content.removeChild(menu)
     } else if (tab === "Contact") {
-        
+
     }
 }))
