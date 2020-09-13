@@ -1,7 +1,8 @@
 import './styles/main.scss'
 
+import navbar from './js/navbar'
 
+const content = document.getElementById('content')
 
-window.onload = function() {
-    console.log('Thanks Marco!')
-};
+content.appendChild(navbar)
+

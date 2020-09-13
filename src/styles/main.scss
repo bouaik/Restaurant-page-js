@@ -1,5 +1,52 @@
-body {
-    background: tomato;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://vistapointe.net/images/restaurant-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    color: teal;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+nav {
+    background-color: #b9cbd5ab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 15px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px
+}
+
+.nav-item {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: teal;
 }
