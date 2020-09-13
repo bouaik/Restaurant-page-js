@@ -98,16 +98,20 @@ const menu = (() => {
         img.setAttribute('src', item.imageUrl)
     
         const nameItem = document.createElement('h4');
+        nameItem.className = "item-title"
         nameItem.textContent = item.name
     
         const priceItem = document.createElement('span');
+        priceItem.className = "item-price"
         priceItem.textContent = item.price
+
+        nameItem.appendChild(priceItem)
+
 
         imgContainer.appendChild(img)
     
         menuItem.appendChild(imgContainer)
         menuItem.appendChild(nameItem)
-        menuItem.appendChild(priceItem)
     
     
         menuItems.appendChild(menuItem)
