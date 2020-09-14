@@ -1,0 +1,36 @@
+.logo {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  color: rgb(151, 23, 0);
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+nav {
+  background-color: #397da2b3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 0 15px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-item {
+  font-size: 25px;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: bold;
+
+  &:hover {
+    color: #fff;
+  }
+}

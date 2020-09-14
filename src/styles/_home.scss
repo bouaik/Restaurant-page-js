@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 60px;
+  color: tomato;
+  text-transform: capitalize;
+  font-family: 'Lobster', cursive;
+}
+
+.home-paragraph {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.order-link {
+  margin-top: 20px;
+  border: 2px solid teal;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: tomato;
+  color: teal;
+  padding: 10px 20px;
+  transition: all 1s ease;
+  font-weight: bolder;
+
+  &:hover {
+    background-color: teal;
+    color: tomato;
+  }
+}
