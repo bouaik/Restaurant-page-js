@@ -60,7 +60,7 @@ Note:- There is only one Div in the HTML page, the whole project is built from J
 
 ## Live Link 
 
-[Click Here](https://rawcdn.githack.com/bouaik/Restaurant-page-js/2d48d07d397a62ad9debf5473b216787ed8c316b/index.html)
+[Click Here](https://determined-mccarthy-9efa6c.netlify.app/)
 
 
 <!-- BUILD WITH -->
