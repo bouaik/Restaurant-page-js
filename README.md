@@ -95,7 +95,7 @@ Now you can successfully open Restaurant app locally in your browser.
 <!-- CONTACT -->
 ## Authors
 
-👤 **Jaspreet Singh** 
+👤 **Lhoussaine Bouaik** 
     
 - [LinkedIn](https://www.linkedin.com/in/lhoussainebouaik)
 - [GitHub](https://github.com/bouaik)
